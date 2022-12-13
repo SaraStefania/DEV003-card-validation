@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-16">
     <title>cat shop</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+  
   <body>
-    <div>
-      <h1>CAT SHOP</h1>
-      <input type="text" id="nombre" name="nombree" placeholder="ingrese nombre"/>
-      <input type="text" id="apellido" name="apellidoo" placeholder="ingrese apellido"/>
-      <input type="number" id="numerot" name="numero" placeholder="ingrese numero de tarjeta"/>
-      sara
-      
+    <div class="formularioTarjeta" id="pagina1">
+      <h1 id="titulo1">CAT SHOP</h1>
+      <input type="text" id="nombre" name="nombre" placeholder="ingrese nombre" />
+      <input type="text" id="numerot" name="numero" placeholder="ingrese numero de tarjeta" maxlength="16" />
+      <div id="error"></div>
+      <input type="month" id="vencimiento" name="vencimientotar" required="required" placeholder="MM/AA"/>
+      <input type="text" id="seguridad" name="codigo" placeholder="ccv" required="required" maxlength="3"/>
+      <br>
+      <button id="siguiente1">SIGUIENTE</button>
     </div>
     
+    <div id="pagina2"  class="oculto">
+    <p id="mensajeValido">Tarjeta valida</p>
+    <p>¿desea continuar con su compra?</p>
+    <button id="siguiente2">SIGUIENTE</button>
+    </div>
+
+    <div class="oculto" id="pagina3">
+      <p>PAGO EXITOSO</p>
+      <button id="siguiente3">VOLVER A INICIO</button>
+    </div>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>

@@ -1,1 +1,77 @@
 
+.oculto {
+    display: none;
+  }
+  
+  body {
+    background-color: #F8D6F0;
+    text-align: center;
+    margin: 105px;
+  
+  }
+  
+  #titulo1 {
+    color: #68415e ;
+    -webkit-text-stroke: 1px #270c20;
+    background-color: #BB8AAF ;
+    font-size: 300%;
+    font-family: "Homer Simpson UI";
+  }
+    
+  
+  input {
+    width:150px;
+    border: #68415e 1px solid;
+    font-size: 100%;
+    font-family: monospace;
+    border-radius: 4px;
+  
+  }
+  
+  
+  #numerot {
+    width: 312px;
+  }
+  
+  #nombre {
+    width: 312px;
+  }
+  
+  button {
+    background: #FEDDF6 ;
+    margin: 5px;
+    border: 2px solid #3a2134;
+    border-radius: 4px;
+  }
+  
+  #siguiente1:hover {
+    background-color: #d8aece;
+    color: #270c20;
+    
+  }
+  
+  #siguiente2:hover {
+    background-color: #d8aece;
+    color: #270c20;
+  }
+  
+  #siguiente3:hover {
+    background-color: #d8aece;
+    color: #270c20;
+  }
+  .formularioTarjeta {
+    background-image: url("img/huella.png");
+    background-size: 95px 95px;
+  }
+  
+  #pagina2 {
+    border: 80px solid;
+    border-image: url("img/huella.png") repeat;
+  }
+  
+  
+    
+  
+  
+  
+  
