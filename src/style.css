@@ -6,7 +6,7 @@
 body {
   background-color: #F8D6F0;
   text-align: center;
-  margin: 105px;
+  margin: 280px;
 
 }
 
@@ -21,16 +21,16 @@ body {
 
 input {
   width:350px;
-  border: #68415e 1px solid;
+  border: #482940 2px solid;
   font-size: 100%;
   font-family: monospace;
   border-radius: 4px;
   font-size: 18px;
-  width: 500px;
-  margin: 0 auto;
-  height: 20px;
+  width: 600px;
+  height: 25px;
   display: block;
-  text-align: center;
+  background: #ffd7f6;
+  margin:  0 auto;
 
 
 }
@@ -39,14 +39,17 @@ input {
 
 button {
   background: #FEDDF6 ;
-  margin: 5px;
+  margin: 9px;
   border: 2px solid #3a2134;
   border-radius: 4px;
+  width: 200px;
+  height: 25px;
 }
 
 #siguiente1:hover {
   background-color: #d8aece;
   color: #270c20;
+
   
 }
 
@@ -62,6 +65,8 @@ button {
 .formularioTarjeta {
   background-image: url("img/huella.png");
   background-size: 95px 95px;
+  margin: 0px;
+  
 }
 
 #pagina2 {
