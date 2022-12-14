@@ -20,7 +20,7 @@
     
   
   input {
-    width:150px;
+    width:312px;
     border: #68415e 1px solid;
     font-size: 100%;
     font-family: monospace;
@@ -29,13 +29,6 @@
   }
   
   
-  #numerot {
-    width: 312px;
-  }
-  
-  #nombre {
-    width: 312px;
-  }
   
   button {
     background: #FEDDF6 ;
@@ -61,14 +54,18 @@
   }
   .formularioTarjeta {
     background-image: url("img/huella.png");
-    background-size: 95px 95px;
+    background-size: 90px 90px;
   }
   
   #pagina2 {
     border: 80px solid;
     border-image: url("img/huella.png") repeat;
+
   }
   
+  #pagina1 {
+    display: block;
+  }
   
     
   
