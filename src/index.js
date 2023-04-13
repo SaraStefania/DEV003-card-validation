@@ -11,7 +11,7 @@ const nombre = document.getElementById("nombre")
 
 numerot.addEventListener("keydown", function(event){
   const numbers = ["0","1","2","3","4","5","6","7","8","9", "Backspace"] //guarde en una constante los numeros - array de teclas eprmitidas
-  const isNumber = numbers.includes(event.key) //se valida si se presiono una tecla permitida(numeros)
+  const isNumber = numbers.includes(event.key) //(tomar el nombre de la tecla que se presiono)se valida si se presiono una tecla permitida(numeros)
   if(!isNumber){
     event.preventDefault() //se bloquea el evento y no escribe nada
     return; 
@@ -22,19 +22,19 @@ numerot.addEventListener("keydown", function(event){
 //hacer una funcion de ocultar y mostrar
 function ocultar(id) {
   const pre = document.getElementById(id)
-  pre.classList.add("oculto")
+  pre.classList.add("oculto") //agregue
 }
   
 function mostrar(id) {
   const pre = document.getElementById(id)
-  pre.classList.remove("oculto")
+  pre.classList.remove("oculto") //remueva
   
 }
 
 //crear otra funcion para capturar el valor  del input y con la condicional hacer nula 
-//la validacion si la casilla input esta vacia o por el contrario me traslade a la pagina 2
-function tarjeta() {
-  const datoTarjeta = numerot.value
+//la validacion si la casilla input esta vacia 
+const datoTarjeta = numerot.value //guardando valor de la atrjeta
+function tarjeta(){ 
   if(datoTarjeta === ""){
     alert("Debe ingresar el numero de tarjeta")
   }
@@ -59,6 +59,7 @@ function tarjeta() {
 
 
 
+
 //crear un escuchador que este atento a la interracion del usuario con el boton
 siguiente1.addEventListener("click", tarjeta)
 
@@ -78,7 +79,7 @@ function pagina31() {
 }
 siguiente3.addEventListener("click", pagina31)
 
-console.log(validator)
+
 
 
 

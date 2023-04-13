@@ -1,15 +1,12 @@
 const validator =  {
-  isValid(numerot) {
-    console.log(numerot)
+  isValid(numerot) { //funcion validar tarjeta - recibe el numero de la tarjeta
     //invertir el numero de la tarjeta 
-    const invertido = Array.from(numerot).reverse()
-    console.log(invertido)
-    //almacena todo el numero invertido y validados 
-    //recorrer el array 
+    const invertido = Array.from(numerot).reverse() //almacena todo el numero invertido y validados 
+    //recorrer el array forEach
     invertido.forEach(function(numero, index){  //index es la posicion de cada numero en el array 
       //numero es el numero de la posicion 
 
-      if(index % 2 !== 0){
+      if(index % 2 !== 0){ //si el residuo es diferente a 0
         let numero2 = numero * 2 //multiplica las posiciones pares por dos
         if(numero2 >= 10){ 
           const digitos = Array.from(numero2.toString())//convierte el numero en un texto para luego convertilo en array y digitos tiene 
@@ -19,7 +16,7 @@ const validator =  {
       }
     })
     
-    console.log(invertido)
+    
     let sumaN = 0 //guarda la suma de los digitos de la tarjeta
 
     invertido.forEach(function(numero){ //recorro nuevamente los digitos de la tarjeta con el foreach
